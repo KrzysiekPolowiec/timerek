@@ -36,3 +36,13 @@ body{
 .clock .number11 { --rotation: 330deg}
 .clock .number12 { --rotation: 360deg}
 
+.clock .hour {
+     --rotation: 0;
+    position:absolute;
+    bottom: 50%;
+    left: 50%;
+    width:10px;
+    height: 35%;
+    background-color: black;
+    transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+}
